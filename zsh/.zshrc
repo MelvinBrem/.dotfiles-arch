@@ -3,4 +3,5 @@
 skip_global_compinit=1
 
 source $HOME/.zsh/.zshprompt
+source $HOME/.zsh/.zshfunctions
 source $HOME/.zsh/.aliases

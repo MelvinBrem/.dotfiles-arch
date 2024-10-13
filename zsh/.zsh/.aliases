@@ -3,10 +3,9 @@
 alias ls="ls -a"
 alias \.\.="cd .."
 
-alias lcl="cd ~/sites-localwp/"
 alias dsk="cd ~/Desktop/"
 alias dl="cd ~/Downloads/"
-alias df="cd ~/.dotfiles/"
+alias df="cd ~/.dotfiles-arch/"
 alias cdlf="lfcd"
 
 alias code="code ."
@@ -14,10 +13,8 @@ alias open="open ."
 alias nano="sudo nano"
 
 alias re="clear; exec zsh -l"
-alias fdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
-alias dnsf="fdns"
 
-alias set_alias="nano ~/.dotfiles/zsh/.zsh/.aliases"
+alias set_alias="nano ~/.dotfiles-arch/zsh/.zsh/.aliases"
 alias set_hosts="nano /etc/hosts"
 alias set_sshhosts="nano ~/.ssh/config"
 alias get_sshhosts="grep -E '^Host' ~/.ssh/config | awk '{print $2}'"
@@ -32,27 +29,3 @@ alias gf="git fetch"
 alias gpmaster="git pull origin master"
 alias gpmain="git pull origin main"
 alias gpdev="git pull origin develop"
-
-# === Composer ===
-
-alias cin="composer install"
-alias cup="composer upgrade"
-alias crm="composer remove"
-alias cre="composer require"
-alias cda="composer dump-autoload"
-
-# === Laravel ===
-
-alias pa="php artisan"
-alias pam="php artisan migrate"
-alias pamr="php artisan migrate:rollback"
-alias par="php artisan migrate:refresh"
-alias pas="php artisan serve"
-
-# === NPM/Yarn ===
-
-alias nrd="npm run dev"
-alias y="yarn"
-alias yb="yarn build"
-alias yd="yarn dev"
-alias yup="yarn upgrade"
