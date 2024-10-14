@@ -1,1 +1,4 @@
+set filesep " "
 map . set hidden!
+set hidden
+set ratios 1:1:2
